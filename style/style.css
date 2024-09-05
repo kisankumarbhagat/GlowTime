@@ -1,0 +1,76 @@
+/* Basic styling for the entire body */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(120deg, #ff9a9e, #fad0c4, #fad0c4, #ffd1ff); /* New vibrant gradient background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Styling the clock container */
+.clock-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    animation: glow 2s infinite alternate;
+}
+
+/* Glowing animation for the clock container */
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.2), 0 0 40px rgba(255, 255, 255, 0.4);
+    }
+    100% {
+        box-shadow: 0 0 40px rgba(255, 255, 255, 0.6), 0 0 80px rgba(255, 255, 255, 1);
+    }
+}
+
+/* Styling the clock digits */
+.clock {
+    font-size: 5rem;
+    color: white;
+    letter-spacing: 8px;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+    animation: pulse 1s infinite alternate;
+}
+
+/* Pulse animation for clock digits */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    }
+    100% {
+        transform: scale(1.05);
+        text-shadow: 0 0 20px rgba(255, 255, 255, 1);
+    }
+}
+
+/* Styling the AM/PM text */
+#ampm {
+    font-size: 2rem;
+    vertical-align: middle;
+    animation: fadeIn 1.5s infinite alternate;
+}
+
+/* Fade-in animation for AM/PM text */
+@keyframes fadeIn {
+    0% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Smooth transition for all text */
+span {
+    display: inline-block;
+    transition: all 0.5s ease-in-out;
+}
