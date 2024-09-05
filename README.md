@@ -10,6 +10,8 @@ GlowTime is an animated digital clock built using JavaScript, HTML, and CSS. The
 - **Vibrant Background**: A visually appealing gradient background to enhance the design.
 - **Smooth Transitions**: The clock updates every second with smooth transitions using `setInterval()` and the `Date` object.
 
+  ![Screenshot (4)](https://github.com/user-attachments/assets/3f9bcf2f-f28d-4f91-911c-dbf4015b40b8)
+
 ## Installation
 
 To run this project locally, follow these steps:
